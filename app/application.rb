@@ -7,7 +7,7 @@ class Application
     item = req.path.split("/songs/").last 
     song = @@songs.find{|s| s.title == song_title}
       
-    if req.path=="/songs"
+    if req.path=="/items"
       resp.write "You requested the songs"
     else
       resp.write "Route not found"
