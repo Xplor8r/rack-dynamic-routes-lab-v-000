@@ -7,8 +7,8 @@ class Application
       
     if req.path.match(/items/)
           
-    item = req.path.split("/items/").last 
-    song = Item.find{|s| s.title == song_title}
+      item = req.path.split("/items/").last 
+
       resp.write "You requested the songs"
     else
       resp.write "Route not found"
